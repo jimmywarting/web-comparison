@@ -1,0 +1,37 @@
+<article>
+	<div style="overflow: auto">
+		<h3>{{Feature.json.title}}</h3>
+		<p><em>{{Feature.json.description}}</em></p>
+		<table class="table table-bordered table-condensed table-hover">
+			<tbody>
+				<tr ng-repeat="row in Feature.json.stats">
+					<td ng-class="Feature.classname(row, col, $index, $parent.$index)" ng-repeat="col in row track by $index" markdown="col" md-extra="Feature.json.MDLinks"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="feature-tab-container">
+			<ul>
+				<li ng-click="t=0" ng-class="{active:!t}">Notes</li>
+				<li ng-click="t=1" ng-class="{active:t==1}">Known issues ({{Feature.json.bugs.length}})</li>
+				<li ng-click="t=2" ng-class="{active:t==2}">Resources ({{Feature.json.links.length}})</li>
+			</ul>
+			<a ng-href="https://github.com/jimmywarting/web-comparison/blob/master/{{Feature.params.category + '/' + Feature.params.feature}}.json" target="_blank">Edit on GitHub</a>
+
+		</div>
+		<div class="feature-panel-container">
+			<div class="feature-notes" ng-switch="t">
+				<div ng-switch-default>Support can be somewhat emulated in older versions of IE using the non-standard expression() syntax.</div>
+				<div ng-switch-when="1">
+					<p ng-if="!Feature.json.bugs.length">No bugs</p>
+					<ul ng-if="Feature.json.bugs.length"><li ng-repeat="bug in Feature.json.bugs" markdown="bug" md-extra="Feature.json.MDLinks">
+				</div>
+				<div ng-switch-when="2">
+					<p ng-if="!Feature.json.links.length">No links</p>
+					<ul ng-if="Feature.json.links.length"><li ng-repeat="link in Feature.json.links" markdown="link" md-extra="Feature.json.MDLinks">
+				</div>
+			</div>
+		</div>
+
+	</div>
+</article>

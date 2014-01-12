@@ -1,0 +1,8 @@
+<div class="col-md-3" ng-repeat="category in Search.categories">
+	<h3 class="text-center">{{category.title}}</h3>
+	<ol>
+		<li ng-repeat="item in category.items | filter:Main.filterSearch">
+			<a ng-href="#/{{category.title + '/' + item | link}}">{{item}}</a>
+		</li>
+	</ol>
+</table>

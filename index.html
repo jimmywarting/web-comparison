@@ -1,1 +1,50 @@
-My GitHub Page
+<!DOCTYPE html><html ng-app="wis" ng-controller="MainCtrl as Main"><head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Web Comparison</title>
+
+    <script>document.write('<base href="' + document.location + '" />');</script>
+
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/default.css" rel="stylesheet">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+</head>
+<body>
+
+	<header>
+
+		<hgroup>
+			<h1><a href="#/">Web Comparison</a></h1>
+			<h5>Compare versios web libraries and service to help you make up your mind aruond things</h5>
+		</hgroup>
+
+		<!-- <nav>
+			<a href="http://www.google.com/moderator/#16/e=ae425">Suggestions</a>
+			<a href="feed.php">Feed</a>
+			<a href="http://twitter.com/caniuse/">Twitter</a>
+		</nav> -->
+
+		<aside id="latest_news">
+			<p>Latest update: <a href="#/service/css-sprite">Sprite Comparison added</a> (January 12, 2013)</p>
+		</aside>
+
+	</header>
+
+	<section class="text-center">
+		<label>search:<br>
+			<input type="search" ng-model="Main.filterSearch" autofocus placeholder="Sprite, preprocessor, [jQuery] lazyload">
+		</label>
+	</section>
+
+	<div style="padding:14px;">
+		<div class="row" ng-view></div>
+	</div>
+</body>
+</html>

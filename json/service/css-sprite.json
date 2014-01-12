@@ -1,0 +1,50 @@
+{
+	"title": "Css Sprite",
+	"description": "Method of generating css sprite image",
+	"links": [
+		"[Css-Tricks] Sprite - What They Are, Why They’re Cool, and How To Use Them",
+		"[Btree]('binary tree') How it works"
+	],
+	"bugs": [
+		"[Css Sprit] seems broken, throws an error (has no method 'handleError')",
+		"[Canvas Css Sprites] is a bit buggy"
+	],
+	"stats": [
+		["",                "[Css Sprite Generator]","[Css Sprites]","[Css sprit]",            "[Canvas Css Sprites]","[Css Spritegen]","[Drupal sprite]","[spritegen]",   "[Smart Sprites]","[Simpreal css Sprites]","[Sprite Generator codeplex]","[Zero Sprites]",    "[Spritepad]",   "[Compass Sprit]"],
+		["Image Output",     "jpg,webp,png,webp/png","png",          "jpg,png,gif",             "Canvas",              "jpg,png,gif",    "png",            "jpg,png,gig",   "png",            "png(base64),bmp",      "png",                        "png(8)",            "png",           "png"            ],
+		["Css output",       "Css & minifyed",       "Css",          "Sass, Css (minifyed)",    "Css",                 "Css",            "Css",            "Css",           "Css",            "Css",                   null,                         "Css",               "Css",           0                ],
+		["Tool",             "Canvas, server>cwebp", "Server",       null,                      "Canvas",              "Server",         "Server",         "Server",        "Java",           "Canvas",                "Windows (exe)",              "Server>ImageMagick","Server",        "Sass"           ],
+		["Padding",          "Globaly & Individual", "Globaly",      0,                         "Globaly",             "Globaly",        null,             "Globaly",       null,             "Individual",            "Individual",                 "Individual",        0,               "Globaly"        ],
+		["Background",       "Globaly & Individual", "Globaly",      0,                         "Globaly",             0,                null,             "Globaly",       null,             0,                       null,                         null,                null,            null             ],
+		["Alignment",        "Custom (Btree)",       "x, y",         null,                      "Custom",              "y",              null,             "x, y",          null,             "Rectpack",              "x, y, Btree",                "Rectpack, Btree",   "Manual, Auto",  null             ],
+		["Unused Background",1,                      0,              0,                         1,                     0,                null,             1,               null,             0,                       null,                         null,                0,               null             ],
+		["Upload",           "Drag'n'drop",          "File",         "Flash(multi), File",      "Url, File",           "Flash(multi)",   null,             "File",          null,             "File(multi)",           "Folder",                     "Drag'n'drop",       "Drag'n'drop",   "@Import"        ],
+		["limits",           "20MB for canvas>webp", null,           null,                      null,                  null,             null,             "Only 1 zip<1MB",null,             null,                    null,                         null,                null,            null             ],
+		["Retina support",   1,                      0,              null,                      0,                     0,                null,             0,               null,             0,                       null,                         null,                0,               null             ],
+		["Background repeat",1,                      0,              0,                         0,                     0,                null,             0,               null,             1,                       null,                         0,                   "only x",        1                ],
+		["Global",           0,                      null,           null,                      null,                  0,                null,             1,               null,             0,                       1,                            1,                   0,               1                ],
+		["Define className", 1,                      0,              0,                         1,                     0,                null,             0,               null,             1,                       null,                         0,                   0,               1                ],
+		["Prefix",           1,                      0,              0,                         0,                     1,                null,             1,               null,             0,                       null,                         0,                   0,               1                ],
+		["Suffix",           0,                      0,              0,                         0,                     0,                null,             1,               null,             0,                       null,                         0,                   0,               1                ],
+		["Re-editable",      1,                      0,              0,                         0,                     0,                null,             0,               null,             1,                       1,                            0,                   1,               1                ]
+	],
+	"MDLinks": [
+		"[Css Sprite Generator]:       http://cssspritegenerator.net",
+		"[Css Sprites]:                http://csssprites.com",
+		"[Css Sprit]:                  http://css-sprit.es/",
+		"[Canvas Css Sprites]:         http://timc.idv.tw/canvas-css-sprites",
+		"[Css Spritegen]:              http://css.spritegen.com",
+		"[Drupal sprite]:              https://drupal.org/project/sprites",
+		"[spritegen]:                  http://spritegen.website-performance.org",
+		"[Smart Sprites]:              http://csssprites.org",
+		"[Simpreal css Sprites]:       http://simpreal.org.ua/csssprites",
+		"[Sprite Generator codeplex]:  http://spritegenerator.codeplex.com",
+		"[Zero Sprites]:               http://zerosprites.com",
+		"[Spritepad]:                  http://spritepad.wearekiss.com",
+		"[Compass Sprit]:              http://compass-style.org/help/tutorials/spriting",
+
+		"[Css-Tricks]:                 http://css-tricks.com/css-sprites",
+		"[bTree]:                      http://codeincomplete.com/posts/2011/5/7/bin_packing/"
+	],
+	"notes": "[Spritepad] auto alignment cost $"
+}
